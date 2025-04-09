@@ -1,6 +1,5 @@
 const { Op } = require("sequelize");
 const axios = require("axios");
-// const { camelCase } = require("lodash");
 const express = require("express");
 const bodyParser = require("body-parser");
 const db = require("./models");

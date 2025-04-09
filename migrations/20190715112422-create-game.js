@@ -1,6 +1,5 @@
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    // 1. Créer la table
     await queryInterface.createTable("Games", {
       id: {
         allowNull: false,
@@ -41,7 +40,6 @@ module.exports = {
       },
     });
 
-    // 2. Ajouter un index unique sur bundleId + platform
     await queryInterface.addIndex("Games", ["bundleId", "platform"], {
       unique: true,
       name: "unique_bundle_platform",

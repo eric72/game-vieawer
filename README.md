@@ -70,22 +70,22 @@ Many other applications at Voodoo will use consume this API.
 We are planning to put this project in production. According to you, what are the missing pieces to make this project production ready?
 Please elaborate an action plan.
 
-/ Containerize the project and the startup script + CI/CD config + test
-/ Migrate to Typescript
-/ Add comment
-/ Add a prefix "/api/games" instead of adding it in each routes
-/ Add a controller instead...
-/ add DTOs for each routes
-/ More... We can discuss it directly
-/ ...Long list
+- Containerize the project and the startup script + CI/CD config + test
+- Migrate to Typescript
+- Add comment
+- Add a prefix "/api/games" instead of adding it in each routes
+- Add a controller instead...
+- add DTOs for each routes
+- More... We can discuss it directly
+- ...Long list
 
 #### Question 2:
 
 Let's pretend our data team is now delivering new files every day into the S3 bucket, and our service needs to ingest those files
 every day through the populate API. Could you describe a suitable solution to automate this? Feel free to propose architectural changes.
 
-/ Add Unique constraint in the database
-/ run migration
-/ Create a backup
-/ Setup a cronJob
-/ Use View and insert difference between day D and day D-1 to optimize database insertion
+- Add Unique constraint in the database
+- run migration
+- Create a backup
+- Setup a cronJob
+- Use View and insert difference between day D and day D-1 to optimize database insertion
